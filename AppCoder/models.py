@@ -3,7 +3,7 @@ from django.db import models
 # Create your models here.
 class Curso(models.Model):
     nombre = models.CharField(max_length=40)                #Formato str con max de carcateres
-    camada = models.IntegerField()
+    camada = models.IntegerField()                          #Formato numerico
 
 class Estudiante(models.Model):
     nombre = models.CharField(max_length=30)                #Formato str con max de carcateres
