@@ -1,12 +1,12 @@
 from django.shortcuts import render 
-from xml.dom.minidom import Document
-from django.http import HttpResponse
-from django.template import loader
-from AppCoder.models import Curso
+
 from django.http import HttpResponse
 
 def inicio(request):
     return render(request, "inicio.html")
+
+def home(request):
+    return render(request, "home.html")
 
 def cursos(request):
     return render(request, "cursos.html")
