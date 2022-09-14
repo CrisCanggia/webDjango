@@ -20,7 +20,7 @@ from WebDjango.view import home, homePage, cursos, inicio
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', inicio),
-    path('home/<name>', home),
+
     path('homePage/', homePage),
     path('cursos/', cursos),
     path('Appcoder/', include("AppCoder.urls")),   
